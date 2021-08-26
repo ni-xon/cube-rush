@@ -5,6 +5,13 @@ public class GameManager : MonoBehaviour
 {
     bool gameIsRunning = true;
     public float restartDelay = 1f;
+    public GameObject completeLevelUI;
+
+    public void CompleteLevel()
+    {
+        completeLevelUI.SetActive(true);
+    }
+
     public void GameOver ()
     {
         if (gameIsRunning == true)
